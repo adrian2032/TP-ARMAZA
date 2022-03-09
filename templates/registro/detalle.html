@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class ="container">
+    <div class ="row">
+        <h2>Docente:</h2>
+    </div>
+    <div class ="row">
+        <ul>
+            <li>Nombre: {{detalle.Nombre}}</li>
+            <li>Apellido: {{detalle.Apellido}}</li>
+            <li>Edad: {{detalle.Edad}} años</li>
+            <li>Materia: {{detalle.materia}}</li>
+        </ul>
+    </div>
+</div>
+
+{% endblock content %}

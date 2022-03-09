@@ -1,0 +1,13 @@
+<h1>Buscar No Docente por Apellido:</h1>
+
+<form method="GET">{% csrf_token %}
+    <input type="text" name = "QNDocente" id="QNDocente" placeholder = "Ingrese Apellido">
+    <button type="submit"> Buscar</button>
+</form>
+
+<h2>Resultado de la busqueda:</h2>
+<ul>
+    {% for nodocente in listaND %}
+    <li>{{nodocente}}</li>
+    {% endfor %}
+</ul>
